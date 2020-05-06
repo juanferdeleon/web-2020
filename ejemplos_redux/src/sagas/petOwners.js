@@ -1,9 +1,9 @@
 import { call, takeEvery, put, select } from "redux-saga/effects";
+import { v4 as uuid } from "uuid";
 
 import * as selectors from "../reducers";
 import * as actions from "../actions/petOwners";
 import * as types from "../types/petOwners";
-import { v4 as uuid } from "uuid";
 
 const API_BASE_URL = "http://localhost:8000/api/v1/owners/";
 
